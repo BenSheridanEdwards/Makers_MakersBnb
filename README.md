@@ -150,6 +150,9 @@ Bookings:
 
 ## <a name="Features">Features of MakersBnb</a>
 
+
+[](https://github.com/BenSheridanEdwards/Makers_MakersBnb_Ruby/blob/master/images/MakersBnb-Sign-Up.png)
+
 ## <a name="Technologies">Technologies used</a>
 
 
