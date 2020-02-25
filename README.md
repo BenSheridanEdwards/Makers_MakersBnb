@@ -82,8 +82,8 @@ I want to be able to confirm or deny the request.
 ### Clone the git repository to your local computer
 
 ```
-git clone https://github.com/BenSheridanEdwards/Makers_MakersBnb_Group_Project.git
-cd makersbnb
+git clone https://github.com/BenSheridanEdwards/Makers_MakersBnb_Ruby.git
+cd Makers_MakersBnb_Ruby
 ```
 
 ## <a name="Database">How to set up the database</a>
@@ -159,8 +159,8 @@ Bookings:
 
 ## <a name="Contributors">Contributors</a>
 
-* [Raluca Ciucu](https://github.com/IngramCapa)
-* [Shafique Mohammed](https://github.com/shafali03)
-* [Jonathan Palma](https://github.com/JonathanPalma-code)
 * [Ben Sheridan-Edwards](https://github.com/BenSheridanEdwards)
+* [Raluca Ciucu](https://github.com/IngramCapa)
+* [Jonathan Palma](https://github.com/JonathanPalma-code)
+* [Shafique Mohammed](https://github.com/shafali03)
 
