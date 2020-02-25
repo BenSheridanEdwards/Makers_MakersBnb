@@ -82,20 +82,59 @@ I want to be able to confirm or deny the request.
 ### Clone the git repository to your local computer
 
 ```
-git clone https://github.com/
+git clone https://github.com/BenSheridanEdwards/Makers_MakersBnb_Group_Project.git
 cd makersbnb
 ```
 
 ## <a name="Database">How to set up the database</a>
 
-Connect to `psql` and create the `makersbnb_test` and `makersbnb` databases:
+Type in the commands 'irb' followed by `psql` to connnect to your user postgres database and use the command 'CREATE DATABASE *name*' create the `makersbnb_test` and `makersbnb` databases:
 
 ```
 CREATE DATABASE makersbnb;
 CREATE DATABASE makersbnb_test;
 ```
 
-To set up the appropriate tables, connect to each database in `psql` and run the SQL scripts in the `db/migrations` folder in the given order.
+Once you're connected to the makersbnb databases set up the appropriate tables, connect to each database in `psql` using \c *databasename* and run the SQL scripts in the `db/migrations` folder.
+
+
+```
+yourusername=# \c makersbnb
+You are now connected to database "makersbnb" as user "yourusername".
+
+makersbnb=# CREATE TABLE users(
+makersbnb(#   id SERIAL PRIMARY KEY,
+makersbnb(#   user_name TEXT NOT NULL,
+makersbnb(#   email TEXT NOT NULL unique,
+makersbnb(#   password_digest TEXT NOT NULL
+makersbnb(# );
+
+makersbnb=# CREATE TABLE properties(
+makersbnb(#   id SERIAL PRIMARY KEY,
+makersbnb(#   prop_name VARCHAR(200),
+makersbnb(#   prop_description VARCHAR(2000),
+makersbnb(#   price_per_night INTEGER,
+makersbnb(#   startdate DATE,
+makersbnb(#   enddate DATE,
+makersbnb(#   owner_id INTEGER REFERENCES users(id)
+makersbnb(#     
+makersbnb(# );
+
+makersbnb=# CREATE TABLE bookings(
+makersbnb(#   id SERIAL PRIMARY KEY,
+makersbnb(#   prop_id INTEGER REFERENCES properties(id),
+makersbnb(#   client_id INTEGER REFERENCES users(id),  
+makersbnb(#   owner_id INTEGER REFERENCES users(id),
+makersbnb(#   startdate date,
+makersbnb(#   enddate date,
+makersbnb(#   length_of_stay INTEGER,
+makersbnb(#   total_price INTEGER,
+makersbnb(#   confirmation BOOLEAN NOT NULL
+makersbnb(# );
+
+```
+and do the same for the makersbnb_test table.
+
 
 ## <a name="Tables">Tables</a>
 
