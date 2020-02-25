@@ -1,6 +1,6 @@
 ### [Makers Academy](http://www.makersacademy.com) - Week 6 Group Programming Project
 
-Makers AirBnb Challenge 
+Makers AirBnb 
 -
 
 [Outline](#Outline) | [Task](#Task) | [User Stories](#Story)| [Installation Instructions](#Installation) | [Database Setup](#Database) | [Tables](#Tables) | [Features of MakersBnb](#Features) | [Technologies used](#Technologies) | [Contributors](#Contributors) 
@@ -150,9 +150,33 @@ Bookings:
 
 ## <a name="Features">Features of MakersBnb</a>
 
+Users can sign up to MakersBnb:
+![](https://github.com/BenSheridanEdwards/Makers_MakersBnb_Ruby/blob/master/images/MakersBnb-Sign-Up.png)
+
+Users can log in if they have an account:
+![](https://github.com/BenSheridanEdwards/Makers_MakersBnb_Ruby/blob/master/images/MakersBnb-Sign-in.png)
+
+Once they're logged in, they are taken to the spaces page, where they can see a list of all the available spaces/properties to rent, and can filter the results by their desired dates:
+![](https://github.com/BenSheridanEdwards/Makers_MakersBnb_Ruby/blob/master/images/MakersBnb-Spaces.png)
+
+Users can also list their own space or property:
+![](https://github.com/BenSheridanEdwards/Makers_MakersBnb_Ruby/blob/master/images/MakersBnb-List-your-space.png)
+
+Once the user has decided on a space to rent, they're asked to select the dates they'd like to book:
+![](https://github.com/BenSheridanEdwards/Makers_MakersBnb_Ruby/blob/master/images/MakersBnb-Date-Confirmation.png)
+
+Once they've made a booking request, they'll be taken to the requests page, where they'll be able to see all the spaces they've made requests for and all the requests that have been made for their spaces:
+![](https://github.com/BenSheridanEdwards/Makers_MakersBnb_Ruby/blob/master/images/MakersBnb-Requests.png)
+*If they click on any booking request in the requests made column, they have the ability to change the dates of their booking.*
+
+In the requests received column, they can select which bookings to confirm or deny:
+![](https://github.com/BenSheridanEdwards/Makers_MakersBnb_Ruby/blob/master/images/MakersBnb-Request-Confirmation.png)
+
+
+
 ## <a name="Technologies">Technologies used</a>
 
-
+* **Ruby & JavaScript** to write the application.
 * **Sinatra** framework as our DSL.
 * **Bootstrap** for styling.
 * **BCrypt** for password hashing.
