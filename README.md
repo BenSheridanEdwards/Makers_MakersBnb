@@ -13,13 +13,6 @@ Build MakersBnb
 
 This week we've been grouped together to build our very own AirBnb clone using everything we've learned over the past 5 weeks at Makers.
 
-## <a name="Installation">Installation Instructions</a>
-
-```
-git clone https://github.com/IngramCapa/makersbnb.git
-cd makersbnb
-```
-
 ## <a name="Story">User Stories</a>
 
 ```
@@ -83,6 +76,15 @@ I want to be able to confirm or deny the request.
 * **PostgresSQL** as our database.
 * **Capybara** and **Rspec** for testing.
 * **Github** for code collaboration.
+
+## <a name="Installation">Installation Instructions</a>
+
+### Clone the git repository to your local computer
+
+```
+git clone https://github.com/
+cd makersbnb
+```
 
 ## <a name="Database">How to set up the database</a>
 
