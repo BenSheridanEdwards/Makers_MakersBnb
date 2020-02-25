@@ -3,7 +3,7 @@
 Makers AirBnb Challenge 
 -
 
-[Outline](#Outline) | [Task](#Task) | [Installation Instructions](#Installation) | [User Stories](#Story)| [Technologies used](#Technologies) | [Database Setup](#Database) | [Tables](#Tables) |[Contributors](#Contributors) |[Objects & Methods](#Methods) | [Feature Tests](#Feature_Tests) 
+[Outline](#Outline) | [Task](#Task) | [User Stories](#Story)| [Installation Instructions](#Installation) | [Database Setup](#Database) | [Tables](#Tables) | [Features of MakersBnb](#Features) | [Technologies used](#Technologies) | [Contributors](#Contributors) 
 
 ## <a name="Outline">Outline</a>
  
@@ -67,16 +67,6 @@ I want to be able to confirm or deny the request.
 
 ```
 
-## <a name="Technologies">Technologies used</a>
-
-
-* **Sinatra** framework as our DSL.
-* **Bootstrap** for styling.
-* **BCrypt** for password hashing.
-* **PostgresSQL** as our database.
-* **Capybara** and **Rspec** for testing.
-* **Github** for code collaboration.
-
 ## <a name="Installation">Installation Instructions</a>
 
 ### Clone the git repository to your local computer
@@ -133,10 +123,11 @@ makersbnb(#   confirmation BOOLEAN NOT NULL
 makersbnb(# );
 
 ```
-and do the same for the makersbnb_test table.
-
+and do the same for the makersbnb_test tables.
 
 ## <a name="Tables">Tables</a>
+
+Now you should have the following tables:
 
 Users:
 
@@ -156,6 +147,18 @@ Bookings:
 |----|------------|-------------|----------|-------------|-----------|----------------|-------------|--------------|
 |    |            |             |          |             |           |                |             |              |  
 
+
+## <a name="Features">Features of MakersBnb</a>
+
+## <a name="Technologies">Technologies used</a>
+
+
+* **Sinatra** framework as our DSL.
+* **Bootstrap** for styling.
+* **BCrypt** for password hashing.
+* **PostgresSQL** as our database.
+* **Capybara** and **Rspec** for testing.
+* **Github** for code collaboration.
 
 ## <a name="Contributors">Contributors</a>
 
