@@ -1,6 +1,6 @@
 ### [Makers Academy](http://www.makersacademy.com) - Week 6 Group Programming Project
 
-Makers AirBnb Challenge 
+Makers AirBnb 
 -
 
 [Outline](#Outline) | [Task](#Task) | [User Stories](#Story)| [Installation Instructions](#Installation) | [Database Setup](#Database) | [Tables](#Tables) | [Features of MakersBnb](#Features) | [Technologies used](#Technologies) | [Contributors](#Contributors) 
