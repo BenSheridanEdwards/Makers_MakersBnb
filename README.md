@@ -176,7 +176,7 @@ In the requests received column, they can select which bookings to confirm or de
 
 ## <a name="Technologies">Technologies used</a>
 
-* **Ruby & JavaScript** as our primary coding languages.
+* **Ruby & JavaScript** to write the application.
 * **Sinatra** framework as our DSL.
 * **Bootstrap** for styling.
 * **BCrypt** for password hashing.
