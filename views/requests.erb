@@ -15,34 +15,46 @@
             <a class="nav-link" href="/requests">Requests</a>
           </li>
         </ul>
-        <form class="nav-item-sign-up" style="padding-right: 10px;">
-        <a class="btn btn-outline-success my-2 my-sm-0" href="/" role="button">Sign Up</a>
-        </form>
-        <br>
-        <form class="nav-item-sign-up">
-        <a class="btn btn-outline-success my-2 my-sm-0" href="/sessions/new" role="button">Sign In</a>
+        <form class="nav-item-sign-out">
+        <a class="btn btn-outline-success my-2 my-sm-0" href="/" role="button">Sign Out</a>
         </form>
       </div>
     </nav>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="stylesheets/requests.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
 
+    .container {
+      display: flex;
+      padding: 1em;
+      background-color: hsl(2002, 55%, 55%);
+      max-height: 600px;
+    }
+
+    .item {
+      flex: 1;
+
+      padding: 1em;
+      margin: .6em;
+      background-color: white;
+    }
+    </style>
 
   </head>
   
   <body>
-    <br>
-    <br>
-    <h1 class="header">Requests</h1>
-    <br>
-    <br>
-    <div class="row">
-      <div class="column" style="background-color:white; border: solid; padding: 20px">
+
+    <h1 style="text-align: center; padding: 10px;"> Requests </h1>
+
+    <section class="container">
+
+      <article class="item"> 
         <h2 style="text-align: center;">Requests Made</h2>
         
-        <% @requests.my_booking_requests.map do |booking| %>
+         <% @requests.my_booking_requests.map do |booking| %>
 
         <div class="items-body">
                   <div class="items-body-content" href="/requests/confirmation">
@@ -57,11 +69,11 @@
                   </div>
                 </div>
         <% end %>
+      </article>
 
-      
+      <article class="item">
 
-      <div class="column" style="background-color:white; border: solid; padding: 20px;">
-        <h2 style="text-align: center;">Requests Received</h2>
+       <h2 style="text-align: center;">Requests Received</h2>
 
             <% @requests.my_space_requests.map do |booking| %>
 
@@ -75,10 +87,11 @@
                       <%="#{@requests.date_converter(@requests.start_date(booking['id']))}  - #{@requests.date_converter(@requests.end_date(booking['id']))}"%>
                     </a>
                   </div>
-                </div>
+          </div>
         <% end %>
-    
-      </div>
-    </div>
+
+      </article>
+
+    </section>
   </body>
 </html>

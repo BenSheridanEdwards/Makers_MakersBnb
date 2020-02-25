@@ -131,7 +131,7 @@ class MakersAirBnB < Sinatra::Base
 
   get '/spaces/dates/:id' do
    @@current_booking_id = params["id"]
-   @bookings = Booking.new
+   @bookings = Bookings.new
    erb :calendar
   end
 
